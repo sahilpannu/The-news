@@ -1,0 +1,154 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    margin: 20px;
+}
+
+/* Article Content */
+.article-content {
+    display: flex;
+    gap: 20px;
+}
+
+.article-main {
+    flex: 3;
+}
+
+.related-articles {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.related-articles ul {
+    list-style-type: none;
+}
+
+.related-articles ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.related-articles ul li a:hover {
+    text-decoration: underline;
+}
+
+/* News List Layout */
+.news-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    width: 32%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.news-item p {
+    font-size: 0.9em;
+}
+
+.news-item a {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.news-item a:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    header .logo a {
+        font-size: 1.6em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .article-content {
+        flex-direction: column;
+    }
+
+    .news-list {
+        
