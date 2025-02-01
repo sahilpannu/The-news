@@ -147,8 +147,7 @@ main {
 .news a {
    text-decoration: none;
     padding: 8px 15px;
-    background-color: #333;
-    color: white;
+    color: #333;
     border-radius: 5px;
     margin-top: 10px;
 }
