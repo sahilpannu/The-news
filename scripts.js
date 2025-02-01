@@ -1,5 +1,5 @@
 async function fetchRSS() {
-    const rssUrl = "https://feeds.bbci.co.uk/news/rss.xml"; // Change to your desired RSS feed
+    const rssUrl = "https://indianexpress.com/feed/"; // Change to your desired RSS feed
     const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
 
     try {
