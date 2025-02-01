@@ -186,5 +186,8 @@ footer {
         flex-direction: column;
     }
 
-    .news-list {
-        
+.news-list {
+    flex-direction: column;
+}
+}
+
