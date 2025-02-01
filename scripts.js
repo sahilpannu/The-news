@@ -13,6 +13,7 @@ async function fetchRSS() {
         data.items.slice(0, 5).forEach(item => {
             newsHTML += `
                 <div class="news">
+                    <img src="${imageUrl}" alt="News Image">
                     <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
                     <p>${item.description}</p>
                 </div>`;
