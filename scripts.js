@@ -13,7 +13,6 @@ async function fetchRSS() {
             const imageUrl = item.enclosure?.link || "default.jpg"; 
             newsHTML += `
                 <div class="news">
-                    <img src="${imageUrl}" alt="News Image">
                     <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
                     <p>${item.description || "No description available."}</p>
                 </div>`;
