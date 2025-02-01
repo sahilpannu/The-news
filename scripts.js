@@ -1,5 +1,5 @@
 async function fetchRSS() {
-    const rssUrl = "https://www.theguardian.com/uk-news/rss";
+    const rssUrl = "https://news.sky.com/feeds/rss/uk.xml";
     const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
 
     try {
