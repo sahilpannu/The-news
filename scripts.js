@@ -8,10 +8,12 @@ async function fetchRSS() {
         
         const data = await response.json();
         let newsHTML = "";
-
+        data.items.slice(0, 5).forEach(item => {
+        const imageUrl = item.enclosure ? item.enclosure.link : "https://via.placeholder.com/150"; // Default image if not available 
         data.items.slice(0, 5).forEach(item => {
             newsHTML += `
                 <div class="news">
+                    <img src="${imageUrl}" alt="News Image">
                     <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
                     <p>${item.description || "No description available."}</p>
                 </div>`;
