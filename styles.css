@@ -121,6 +121,32 @@ main {
     margin-top: 10px;
 }
 
+#news-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.news {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news h3 {
+    margin: 0;
+}
+
+.news a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.news p {
+    color: #555;
+}
+
 .news-item a:hover {
     background-color: #555;
 }
