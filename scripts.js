@@ -10,7 +10,6 @@ async function fetchRSS() {
         let newsHTML = "";
 
         data.items.slice(0, 5).forEach(item => {
-            const imageUrl = item.enclosure?.link || "default.jpg"; 
             newsHTML += `
                 <div class="news">
                     <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
